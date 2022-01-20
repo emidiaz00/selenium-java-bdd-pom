@@ -1,5 +1,5 @@
 Feature: Test SandBox Rows functionality
-@Test
+  @Regresion
 
   @SandBoxPage
   Scenario: As a user I navigate to sandbox page and see rows

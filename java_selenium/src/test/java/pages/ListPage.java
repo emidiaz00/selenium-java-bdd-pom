@@ -1,6 +1,6 @@
 package pages;
 
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 
 import java.util.ArrayList;
@@ -47,7 +47,7 @@ public class ListPage extends BasePage{
         for (int i = 0; i < listaWebElement.size(); i++) {
             WebElement elementoWeb = listaWebElement.get(i);
             NewListString.add(elementoWeb.getText());
-            System.out.println(NewListString);
+
         }
         return NewListString;
 
