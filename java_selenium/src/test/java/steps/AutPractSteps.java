@@ -38,7 +38,7 @@ public class AutPractSteps {
 
     // Scenario: As a new user I want register
 
-    @Given("^I am on the Automation page$")
+    /*@Given("^I am on the Automation page$")
     public void iAmOnTheAutomationPage() {
 
     }
@@ -48,8 +48,10 @@ public class AutPractSteps {
     }
     @And("^I send email addres to create an account$")
     public void iSendEmailAddressToCreateAnAccount() {
-        
+
     }
-    @Then("^$")
+    @Then("^$")/*
+
+     */
 
 }

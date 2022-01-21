@@ -18,7 +18,7 @@ public class GoogleSteps {
         google.enterSearchCriteria("Traductor El Mundo");
     }
     @And("^click on the search button$")
-    public void clickSearchButton(){
+    public void clickSearchButton() {
         google.clickGoogleSearch();
     }
     @Then("^the results match the criteria$")

@@ -9,8 +9,8 @@ Feature: Test Automation search functionality
     And add product to cart
     Then verify the product cart added
 
-    Scenario: As a new user I want register
-      Given I am on the Automation page
-      When I click on the Sign in
-      And I send email address to create an account
-      Then fill the fields to create an account
+    #Scenario: As a new user I want register
+      #Given I am on the Automation page
+      #When I click on the Sign in
+      #And I send email address to create an account
+      #Then fill the fields to create an account/*

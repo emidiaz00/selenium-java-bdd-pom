@@ -3,9 +3,7 @@ package pages;
 
 
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -42,11 +40,24 @@ public class BasePage {
     }
 
     public void clickElement(String locator) {
-        find(locator).click();
+        try {
+            find(locator).click();
+        } catch (Exception e) {
+            System.out.println("**********************");
+            System.out.println("Element was not found: " + locator);
+            System.out.println("**********************");
+        }
+
     }
     public void write(String locator,String textToWrite) {
-        find(locator).clear();
-        find(locator).sendKeys(textToWrite);
+        try {
+            find(locator).clear();
+            find(locator).sendKeys(textToWrite);
+        } catch (Exception e) {
+            System.out.println("**********************");
+            System.out.println("Element was not found: " + locator);
+            System.out.println("**********************");
+        }
     }
 
     public void SelectFromDropDown(String locator,String valueToSelect) {
