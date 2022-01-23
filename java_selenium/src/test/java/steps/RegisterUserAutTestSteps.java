@@ -15,7 +15,7 @@ public class RegisterUserAutTestSteps {
     public void navigateToAutomationExercise() {
         register.navigateToRegisterUserPage();
     }
-    @And("^Verify that home page is visible sucessfully$")
+    @And("Verify that home page is visible successfully")
     public void verifyHomePageIsVisible() {
         Assert.assertEquals("Home", register.resultHomeIsvisible());
     }
@@ -39,30 +39,26 @@ public class RegisterUserAutTestSteps {
     }
     @When("^fill details$")
     public void completeFieldsDetails() {
-
-
+        register.enterCriteriaFillFields();
     }
     @And("^Click on create an account button$")
-    public void wdaaawdwawdaaw() {
-
+    public void createAnAccount() {
+        register.ClickCreateAnAccount();
     }
     @And("^Verify that account created is visible$")
-    public void wdaawddddwawdaaw() {
-
-    }
+    public void createdAccountIsVisible() {
+        register.resultAccountCreatedIsVisible()
+;    }
     @And("^Click continue button$")
-    public void wdaawdwaaaawdaaw() {
-
+    public void clickContinueButtonRegister() {
+            register.ClickContinueButton();
     }
     @And("^Click Delete Account button$")
-    public void wdaaaaawdwawdaaw() {
-
+    public void clickDeleteAccountButton() {
+            register.ClickDeleteAccount();
     }
     @Then("^Verify that Account Deleted is visible and click continue button$")
-    public void wdaawdwiiawdaaw() {
-
+    public void verifyAccountDeleted() {
+        register.DeleteAccountAssert();
     }
-
-
-
 }

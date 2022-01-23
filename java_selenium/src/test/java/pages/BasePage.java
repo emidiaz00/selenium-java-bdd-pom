@@ -21,7 +21,7 @@ public class BasePage {
      // bloque estatico que se va ejecutar al comienzo
 
     static {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\Downloads\\java_selenium_def\\java_selenium\\src\\test\\resources\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Emi\\Desktop\\selenium-java-bdd-pom\\java_selenium\\src\\test\\resources\\driver\\chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
         driver = new ChromeDriver(chromeOptions);
         wait = new WebDriverWait(driver,10);
@@ -60,7 +60,7 @@ public class BasePage {
         }
     }
 
-    public void SelectFromDropDown(String locator,String valueToSelect) {
+    public void SelectFromDropDownByValue(String locator,String valueToSelect) {
         Select dropdown = new Select(find(locator));
         dropdown.selectByValue(valueToSelect);
     }
