@@ -1,7 +1,5 @@
 package pages;
 
-
-
 public class AutPractPage extends BasePage {
     private String searchTextField = "//input[@id='search_query_top']";
     private String searchButton = "//header/div[3]/div[1]/div[1]/div[2]/form[1]/button[1]";
