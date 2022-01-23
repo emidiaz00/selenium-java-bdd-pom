@@ -8,7 +8,6 @@ public class RegisterUserPage extends BasePage {
     private String nameInputField = "//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[2]";
     private String emailInputField = "//body/section[@id='form']/div[1]/div[1]/div[3]/div[1]/form[1]/input[3]";
     private String signUpButtonRegister = "//button[contains(text(),'Signup')]";
-
     private String buttonGender = "//input[@id='id_gender1']";
     private String nameInputRegister = "//input[@id='name']";
     private String emailInputRegister = "//input[@id='email']";
@@ -16,7 +15,6 @@ public class RegisterUserPage extends BasePage {
     private String dateOfBirth = "//select[@id='days']";
     private String month = "//select[@id='months']";
     private String year = "//option[contains(text(),'2012')]";
-
     private String firstNameRegister = "//input[@id='first_name']";
     private String lastNameRegister = "//input[@id='last_name']";
     private String compayRegister = "//input[@id='company']";
@@ -32,11 +30,9 @@ public class RegisterUserPage extends BasePage {
     private String deleteAccount = "//*[contains(text(),'Delete Account')]";
     private String deleteAccountButtonAssert = "//h4[contains(text(),'Are you sure you want to delete this Delete Account?')]";
 
-
     public RegisterUserPage() {
         super(driver);
     }
-
     public void navigateToRegisterUserPage() {
         navigateTo("https://automationexercise.com/");
     }

@@ -14,12 +14,10 @@ public class AutPractSteps {
     @Given("^I am on the Automation search page$")
     public void navigateToAutomationPractice() {
         practice.navigateToAutomationPractice();
-
     }
     @When("^I enter a search criteria in field$")
     public void enterSearchCriteriaFieldDress() {
         practice.enterSearchDress("Dress");
-
     }
     @And("^click on the search button dress$")
     public void clickSearchButtonDress() {
@@ -35,23 +33,4 @@ public class AutPractSteps {
     public void validateResultsAutomationPracticeSearch() {
         Assert.assertEquals("Product successfully added to your shopping cart", practice.resultAutProductAdded());
     }
-
-    // Scenario: As a new user I want register
-
-    /*@Given("^I am on the Automation page$")
-    public void iAmOnTheAutomationPage() {
-
-    }
-    @When("^I click on the Sign in$")
-    public void iClickOnTheSignIn() {
-
-    }
-    @And("^I send email addres to create an account$")
-    public void iSendEmailAddressToCreateAnAccount() {
-
-    }
-    @Then("^$")/*
-
-     */
-
 }
