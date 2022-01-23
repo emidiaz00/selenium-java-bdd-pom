@@ -1,7 +1,6 @@
 package pages;
 
 public class RegisterUserPage extends BasePage {
-
     private String homeIsVisibleLocator = "//*[contains(text(),'Home')]";
     private String signUpButton = "//*[contains(text(),'Signup / Login')]";
     private String newUserSignUp = "//*[contains(text(),'New User Signup!')]";

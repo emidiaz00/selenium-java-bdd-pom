@@ -10,10 +10,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.List;
 
 public class BasePage {
-    // un solo valor para todas las instancias de la clase
-     protected static WebDriver driver;
-     private static WebDriverWait wait;
-     // bloque estatico que se va ejecutar al comienzo
+    protected static WebDriver driver;
+    private static WebDriverWait wait;
+
     static {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\Emi\\Desktop\\selenium-java-bdd-pom\\java_selenium\\src\\test\\resources\\driver\\chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
@@ -60,11 +59,10 @@ public class BasePage {
         return find(locator).getText();
    }
    public String getValueFromTable(String locator, int row, int column) {
-        //String for obtains locator rows
         String cellINeed = locator+"/table/tbody/tr["+row+"]/td["+column+"]";
         return find(cellINeed).getText();
     }
-    // return all that find the findElements
+
     public List<WebElement> bringMeAllElements(String locator) {
         return driver.findElements(By.className(locator));
     }
