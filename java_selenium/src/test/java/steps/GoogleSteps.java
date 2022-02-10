@@ -25,5 +25,6 @@ public class GoogleSteps {
     public void validateResults(){
         Assert.assertEquals("Traductor | EL MUNDO", google.resultGoogleSearch());
     }
+
 }
 

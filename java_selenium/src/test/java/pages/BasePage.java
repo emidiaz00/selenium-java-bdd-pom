@@ -1,3 +1,4 @@
+
 package pages;
 import org.junit.Assert;
 import org.openqa.selenium.*;
@@ -14,7 +15,8 @@ public class BasePage {
     private static WebDriverWait wait;
 
     static {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Emi\\Desktop\\selenium-java-bdd-pom\\java_selenium\\src\\test\\resources\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\admin\\OneDrive - vates.com\\Escritorio\\selenium-java-bdd-pom\\java_selenium\\src\\test\\resources\\driver\\chromedriver.exe");
+        // crear un objeto de chrome options y pasarselo como parametro a chromedriver y webdriverWait
         ChromeOptions chromeOptions = new ChromeOptions();
         driver = new ChromeDriver(chromeOptions);
         wait = new WebDriverWait(driver,10);
@@ -23,6 +25,10 @@ public class BasePage {
         BasePage.driver = driver;
         wait = new WebDriverWait(driver,10);
     }
+    public static void closeBrowser() {
+        driver.quit();
+    }
+
     public static void navigateTo(String url) {
         driver.get(url);
     }
