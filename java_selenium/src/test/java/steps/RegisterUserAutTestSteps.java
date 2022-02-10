@@ -31,7 +31,7 @@ public class RegisterUserAutTestSteps {
     @And("^Enter name and email address")
     public void enterNameAndEmailAddress() {
         register.enterCriteriaEmailAndAddress("Emiliano");
-        register.enterCriteriaEmailAndAddress("emildsn06@gmail.com");
+        register.enterCriteriaEmailAndAddress("emildsn08@gmail.com");
     }
     @And("^Click Signup Button$")
     public void ClickSignUpButton() {
