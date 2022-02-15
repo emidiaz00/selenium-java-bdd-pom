@@ -1,8 +1,13 @@
 Feature: Test list page
-  @Regresion
+  @Regression
 
   @TestList
-  Scenario: As a tester automation, I want to validate that a text is present inside the list.
+  Scenario Outline: As a tester automation, I want to validate that a text is present inside the list.
     Given I navigate to the list page
-    When I search the list
-    Then I can find the text in the list
+    When I search <state> in the list
+    Then I can find <city> in the list
+
+    Examples:
+    | state            |  city                   |
+    | Washington       |  Seattle, Washington    |
+    | Chicago          |  Chicago, Illinois      |
