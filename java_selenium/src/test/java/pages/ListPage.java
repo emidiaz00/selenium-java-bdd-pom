@@ -16,9 +16,9 @@ public class ListPage extends BasePage{
     public void navigateToListPage() {
         navigateTo("https://andreidbr.github.io/JS30/06AjaxTypeAhead/index.html");
     }
-    public void enterSearchInfoList() throws InterruptedException {
+    public void enterSearchInfoList(String state) throws InterruptedException {
         Thread.sleep(600);
-        write(searchInput, "Washington");
+        write(searchInput, state);
     }
     public List<String> listaStrings() {
         List<WebElement> listaWebElement = bringMeAllElements(searchResults);
