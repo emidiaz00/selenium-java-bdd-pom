@@ -9,6 +9,7 @@ Feature: Login on the page Demo Blaze
     And verify that login is visible
     Then fill the field <username> and <password> of login
     And click on button login
+    And verify that account has been created
     Examples:
 
     |    username                |   password     |
