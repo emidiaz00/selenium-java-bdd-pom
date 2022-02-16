@@ -58,15 +58,15 @@ public class BasePage {
         Select dropdown = new Select(find(locator));
         dropdown.selectByValue(valueToSelect);
     }
-    public void TextToValidate(String locator, String valueToValidate) {
-        Assert.assertEquals(valueToValidate, find(locator).getText());
-    }
     public String textFromElement(String locator) {
         return find(locator).getText();
    }
    public String getValueFromTable(String locator, int row, int column) {
         String cellINeed = locator+"/table/tbody/tr["+row+"]/td["+column+"]";
         return find(cellINeed).getText();
+    }
+    public Boolean isDisplayed(String locator) {
+        return find(locator).isDisplayed();
     }
 
     public List<WebElement> bringMeAllElements(String locator) {
