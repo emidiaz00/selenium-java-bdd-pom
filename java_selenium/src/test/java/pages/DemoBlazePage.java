@@ -14,6 +14,8 @@ public class DemoBlazePage extends BasePage {
         super(driver);
     }
     public void navigateToDemoBlaze() {
+        //Mazimize current window
+        driver.manage().window().maximize();
         navigateTo("https://www.demoblaze.com/");
     }
     public void clickLogin() throws NoSuchElementException {

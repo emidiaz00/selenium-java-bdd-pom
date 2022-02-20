@@ -3,7 +3,7 @@ Feature: Login on the page Demo Blaze
   @Regresion
 
   @DemoBlaze
-    Scenario Outline: As a user I want sign up on the demoblaze page
+    Scenario Outline: As a user I want login on the demoblaze page
     Given I am on the DemoBlaze page
     When I click on sign up
     And verify that login is visible
