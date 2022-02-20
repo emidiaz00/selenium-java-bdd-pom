@@ -15,7 +15,7 @@ public class DemoBlazeSteps {
     public void iAmOnTheDemoBlazePage() {
         demoblaze.navigateToDemoBlaze();
     }
-    @When("^I click on login$")
+    @When("^I click on sign up$")
     public void iClickOnLoginDemoBlaze() {
         demoblaze.clickLogin();
     }
@@ -31,10 +31,4 @@ public class DemoBlazeSteps {
     public void clickOnButtonLogin() {
         demoblaze.clickButtonLogin();
     }
-    @And("^verify that account has been created$")
-    public void verifyAccountHasBeenCreated() {
-        Assert.assertEquals("waawwa", );
-    }
-
-
 }

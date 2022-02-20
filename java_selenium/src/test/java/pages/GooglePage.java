@@ -23,7 +23,7 @@ public class GooglePage<Bolean> extends BasePage {
          write(searchTextField, criteria);
     }
     public void clickGoogleSearch() throws NoSuchElementException {
-        clickElement(searchButton);
+        clickElementByxpath(searchButton);
     }
     public String resultGoogleSearchHolaMundo(){
         return textFromElement(resultsSearchGoogle);
@@ -36,7 +36,7 @@ public class GooglePage<Bolean> extends BasePage {
         write(searchTextField, criteria);
     }
     public void clickUdemyLink() throws NoSuchElementException {
-        clickElement(linkUdemySearchInGoogle);
+        clickElementByxpath(linkUdemySearchInGoogle);
     }
     public String resultUdemySearch() {
         return textFromElement(resultUdemySearchInGoogle);
