@@ -39,7 +39,7 @@ public class RegisterUserPage extends BasePage {
         return textFromElement(homeIsVisibleLocator);
     }
     public void ClickSignUpButton() {
-        clickElement(signUpButton);
+        clickElementByxpath(signUpButton);
     }
     public String resultNewUserIsVisible() {
         return textFromElement(newUserSignUp);
@@ -49,16 +49,16 @@ public class RegisterUserPage extends BasePage {
        write(emailInputField,criteria);
     }
     public void ClickSignUpButtonRegister() {
-        clickElement(signUpButtonRegister);
+        clickElementByxpath(signUpButtonRegister);
     }
     public void enterCriteriaFillFields() {
-        clickElement(buttonGender);
+        clickElementByxpath(buttonGender);
         write(nameInputRegister, "Emiliano");
         write(emailInputRegister,"emildsn05@gmail.com");
         write(passwordInputRegister,"Password1");
         SelectFromDropDownByValue(dateOfBirth,"2");
         SelectFromDropDownByValue(month,"1");
-        clickElement(year);
+        clickElementByxpath(year);
         write(firstNameRegister,"Emiliano");
         write(lastNameRegister,"Diaz");
         write(compayRegister,"logitech");
@@ -68,21 +68,21 @@ public class RegisterUserPage extends BasePage {
         write(cityRegister,"Florida");
         write(zipCodeRegister,"t99501");
         write(mobileNumberRegister,"11444444444");
-        clickElement(createAnAccountButtonRegister);
+        clickElementByxpath(createAnAccountButtonRegister);
     }
     public void ClickCreateAnAccount() {
-        clickElement(createAnAccountButtonRegister);
+        clickElementByxpath(createAnAccountButtonRegister);
     }
     public String resultAccountCreatedIsVisible() {
         return textFromElement(accountCreatedAssert);
     }
     public void ClickContinueButton() {
-        clickElement(continueButton);
+        clickElementByxpath(continueButton);
     }
     public void ClickDeleteAccount() {
-        clickElement(deleteAccount);
+        clickElementByxpath(deleteAccount);
     }
     public void DeleteAccountAssert() {
-        clickElement(deleteAccountButtonAssert);
+        clickElementByxpath(deleteAccountButtonAssert);
     }
 }

@@ -15,10 +15,10 @@ public class AutPractPage extends BasePage {
         write(searchTextField, information);
     }
     public void clickAutomationPracticeSearch() {
-        clickElement(searchButton);
+        clickElementByxpath(searchButton);
     }
     public void clickProductCart() {
-        clickElement(productCartAdd);
+        clickElementByxpath(productCartAdd);
     }
     public String resultAutProductAdded() {
         return textFromElement(productCartAdded);
