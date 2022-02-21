@@ -10,16 +10,23 @@ import pages.BasePage;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "steps",
-        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "json:target/cucumber-reports.json"},
-        monochrome = true,
+        plugin = {"json:test/report/cucumber_report.json"},
         tags = "@DemoBlaze"
 )
-
-
 public class TestRunner {
     @AfterClass
     public static void cleanDriver() {
         BasePage.closeBrowser();
+    }
+    public static void openReport() {
+        try {
+            System.out.println("Generating report");
+            String[] cmd = {"cmd.exe", "c/", "npm run report"};
+            Runtime.getRuntime().exec(cmd);
+            System.out.println("Report generated sucessfully");
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 
 }
