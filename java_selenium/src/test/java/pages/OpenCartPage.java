@@ -15,7 +15,7 @@ public class OpenCartPage extends BasePage {
     private String inputTelephone = "//input[@id='input-telephone']";
     private String inputPassword = "//input[@id='input-password']";
     private String inputPasswordConfirm = "//input[@id='input-confirm']";
-    private String checkBoxAgreePrivaciPolicy = "//body/div[@id='account-register']/div[1]/div[1]/form[1]/div[1]/div[1]/input[1]";
+    private String checkBoxAgreePrivacyPolicy = "//body/div[@id='account-register']/div[1]/div[1]/form[1]/div[1]/div[1]/input[1]";
     private String buttonConfirmRegister = "//body/div[@id='account-register']/div[1]/div[1]/form[1]/div[1]/div[1]/input[2]";
 
 
@@ -39,7 +39,7 @@ public class OpenCartPage extends BasePage {
         write(inputPasswordConfirm, passwordConfirm);
     }
     public void clickOnTheContinueButton() {
-        clickElementByxpath(checkBoxAgreePrivaciPolicy);
+        clickElementByxpath(checkBoxAgreePrivacyPolicy);
         clickElementByxpath(buttonConfirmRegister);
     }
 
