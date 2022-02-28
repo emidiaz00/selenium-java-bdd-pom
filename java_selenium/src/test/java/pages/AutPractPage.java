@@ -5,6 +5,7 @@ public class AutPractPage extends BasePage {
     private String searchButton = "//header/div[3]/div[1]/div[1]/div[2]/form[1]/button[1]";
     public String productCartAdd = "//*[contains(text(),'Add to cart')]";
     public String productCartAdded = "//body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[4]/div[1]/div[1]/h2[1]";
+
     public AutPractPage() {
         super(driver);
     }
