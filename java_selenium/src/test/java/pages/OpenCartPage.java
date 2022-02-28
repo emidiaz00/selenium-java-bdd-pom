@@ -30,8 +30,17 @@ public class OpenCartPage extends BasePage {
         clickElementByxpath(myAccount);
         clickElementByxpath(loginInMyAccount);
     }
-    public void enterCriteriaOnTheFields() {
-
+    public void enterCriteriaOnTheFields(String firstname,String lastname, String email, String telephone, String password, String passwordConfirm) {
+        write(inputFirstName, firstname);
+        write(inputLastName, lastname);
+        write(inputEmail, email);
+        write(inputTelephone, telephone);
+        write(inputPassword, password);
+        write(inputPasswordConfirm, passwordConfirm);
+    }
+    public void clickOnTheContinueButton() {
+        clickElementByxpath(checkBoxAgreePrivaciPolicy);
+        clickElementByxpath(buttonConfirmRegister);
     }
 
 }
