@@ -11,10 +11,12 @@ public class OpenCartPage extends BasePage {
 
     private String inputFirstName = "//input[@id='input-firstname']";
     private String inputLastName = "//input[@id='input-lastname']";
-    private String inputEmail = "";
-    private String inputTelephone = "";
-    private String inputPassword = "";
-    private String inputPasswordConfirm = "";
+    private String inputEmail = "//input[@id='input-email']";
+    private String inputTelephone = "//input[@id='input-telephone']";
+    private String inputPassword = "//input[@id='input-password']";
+    private String inputPasswordConfirm = "//input[@id='input-confirm']";
+    private String checkBoxAgreePrivaciPolicy = "//body/div[@id='account-register']/div[1]/div[1]/form[1]/div[1]/div[1]/input[1]";
+    private String buttonConfirmRegister = "//body/div[@id='account-register']/div[1]/div[1]/form[1]/div[1]/div[1]/input[2]";
 
 
 
