@@ -20,7 +20,7 @@ public class YoutubeListPage extends BasePage {
     }
     public void enterSearchCriteriaInInput(String word)  {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(600);
             write(inputSearchYoutube, word);
         }
         catch(Exception e)
