@@ -1,6 +1,7 @@
 Feature: Login on OpenCart
 
-
+  @Regresion
+    
   @LoginOpenCart
   Scenario Outline: As a user I want login on OpenCart
     Given I am on the Open Cart page

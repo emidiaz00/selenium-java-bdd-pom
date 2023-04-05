@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.NoSuchElementException;
 
 
-public class GooglePage<Bolean> extends BasePage {
+public class GooglePage extends BasePage {
     private String searchButton = "//body/div[1]/div[3]/form[1]/div[1]/div[1]/div[2]/div[2]/div[5]/center[1]/input[1]";
     private String searchTextField = "/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/input";
     private String resultsSearchGoogle = "//*[@id=\"rso\"]/div[1]/div/div[1]/div/div/div[1]/div/a/h3";

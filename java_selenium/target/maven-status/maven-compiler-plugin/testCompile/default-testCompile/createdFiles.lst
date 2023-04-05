@@ -1,4 +1,17 @@
 pages\BasePage.class
+steps\AutPractSteps.class
+steps\DemoBlazeSteps.class
 pages\GooglePage.class
+steps\ListPageSteps.class
+pages\OpenCartPage.class
+pages\ListPage.class
+pages\ParaBankPage.class
+pages\YoutubeListPage.class
+steps\OpenCartSteps.class
+pages\DemoBlazePage.class
+pages\AutPractPage.class
 steps\GoogleSteps.class
+steps\RegisterUserAutTestSteps.class
+pages\RegisterUserPage.class
 runner\TestRunner.class
+steps\YoutubeListSteps.class

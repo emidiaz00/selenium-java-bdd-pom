@@ -11,22 +11,12 @@ import pages.BasePage;
         features = "src/test/resources/features",
         glue = "steps",
         plugin = {"json:test/report/cucumber_report.json"},
-        tags = "@LoginOpenCart"
+        tags = "@Regresion"
 )
 public class TestRunner {
     @AfterClass
     public static void cleanDriver() {
         BasePage.closeBrowser();
-    }
-    public static void openReport() {
-        try {
-            System.out.println("Generating report");
-            String[] cmd = {"cmd.exe", "c/", "npm run report"};
-            Runtime.getRuntime().exec(cmd);
-            System.out.println("Report generated sucessfully");
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
     }
 
 }
